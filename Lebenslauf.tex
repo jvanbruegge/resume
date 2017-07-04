@@ -1,0 +1,228 @@
+              
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+\usepackage{eurosym}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Jan}{van Brügge}
+\title{Lebenslauf}                               % optional, remove / comment the line if not wanted
+\address{Am Sportplatz 3, 85375 Neufahrn}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+49 176 45884975}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{jan@vanbruegge.de}                               % optional, remove / comment the line if not wanted
+%\homepage{www.myname.webs.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{geb. 12.02.1997}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%--------------------------------------------------------------
+%            content
+%--------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+%\small{Undergraduate electrical and electronic engineer completing the final year of a master's degree. Passionate about science, with strong technical, business, and interpersonal skills for working in a team and successfully completing a project.}
+
+\section{Praktika}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{August -- September 2016}{Hospitant}{Bayrischer Rundfunk}{München}{}{\vspace{3pt}Sechs Wochen lang war ich bei BR Data, der datenjournalistischen Abteilung des Bayrischen Rundfunks. Während dieser Zeit habe ich selbstständig ein Tool zur Erhebung von Umfragen geschrieben inklusive gemeinsames Erstellen eines Anforderungskatalogs im Team und eigenständige Wahl des Stacks (\textit{siehe "Projekte"}).}}
+
+
+\vspace{6pt}
+
+\item{\cventry{Juni 2014}{Praktikant}{Klonk Games}{München}{}{\vspace{3pt}Ich programmierte selbstständig für das Spiel \textit{"TDS"} neue Gegner samt KI sowie ein neues User Interface. Anschließend erstellte ich einige Levels für das Spiel \textit{"Shift Happens"}, von denen einige im fertigen Spiel zu finden sind.}}
+
+\vspace{6pt}
+
+\item{\cventry{April 2014}{Praktikant}{Telemotive AG}{München}{}{\vspace{3pt}In der IT-Abteilung hatte ich unter anderem als Aufgaben, die Implementierung einer dynamischen Linkliste mit PHP und Javascript, sowie das Einrichten von Laptops.}}
+
+\vspace{6pt}
+
+\item{\cventry{August 2013}{Praktikant}{TÜV Süd Automotive GmbH}{Garching}{}{\vspace{3pt}Während meines Praktikums im Reifentestlabor musste ich zu prüfende Reifen auf Felgen aufziehen, sie unter fachlicher Anleitung den verschiedensten genormten Tests unterziehen und diese auswerten. Zusätzlich erstellte ich aus den in Excel vorliegenden Inventarlisten in Eigenarbeit eine Accessdatenbank, durch die die Aktualisierung der Lagerbestände deutlich vereinfacht wurde.}}
+
+\end{itemize}
+
+\section{Selbstständige Tätigkeiten}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{Gründung Juni 2015}{Softwareentwicklung, hauptsächlich Webdesign}{JanCo IT Solutions}{Neufahrn}{}{\vspace{3pt}Für Firmen, Organisationen und Privatpersonen programmiere ich Webanwendungen. Auszug der Projekte unter \textit{"Projekte"}.}}
+
+\end{itemize}
+
+\section{Schulische Ausbildung}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2015 -- vsl. 2018}{Informatik, Anwendungsfach Maschinenbau}{Technische Universität München}{Garching}{Bachelor of Science}{}}
+
+\item{\cventry{2007 -- 2015}{Schulabschluss: allgemeine Hochschulreife}{Oskar-Maria-Graf Gymnasium}{Neufahrn}{}{}}  % arguments 3 to 6 can be left empty
+
+\end{itemize}
+
+\vspace{2pt}
+
+\section{Projekte}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{Umfragetool} \textit{BR Data}
+
+\small{Cycle.js, Node.js/Express, Typescript, MongoDB}
+
+\vspace{3pt}
+
+\begin{small}
+\begin{itemize}
+\item{Cycle.js: Funktional/Reactive, simpleres debuggen}
+\item{Typescript: Typsystem verhindert simple Fehler im voraus}
+\item{MongoDB: Objektorientierter Ansatz ideal zur Speicherung von stark unterschiedlichen Daten}
+\end{itemize}
+\end{small}
+}
+
+\vspace{6pt}
+
+\item{\textbf{pdGraph} \textit{Hörmann Automotive Penzberg GmbH}
+
+\small{Play! Framework (Java), Cycle.js, D3.js, Typescript, Microsoft SQL Server}
+
+\vspace{3pt}
+
+\begin{small}
+\begin{itemize}
+\item{Play! Framework: Schneller Server ohne externe Abhängigkeiten}
+\item{D3.js: Industriestandard, ausgereift und sehr mächtig}
+\item{Cycle.js: Reactive Streams erlauben einfache Nutzung von mehreren Datenquellen}
+\end{itemize}
+\end{small}
+}
+
+\vspace{6pt}
+
+\item{\textbf{MOVE-II} \textit{WARR}
+
+\small{C++, CMake, GTest Framework, Jenkins CI}
+
+\vspace{3pt}
+
+\begin{small}
+\begin{itemize}
+\item{MOVE-II (Munich Orbital Verification Experiment): CubeSat entwickelt von Stundenten, Start 2018}
+\item{ADCS (Attitude Determination and Control System): aktive Lageregelung des Satelliten}
+\item{eigene Rolle: Leiter der Software des ADCS, verantwortlich u.a. Softwaredesign und Code Review}
+\end{itemize}
+\end{small}
+}
+
+\end{itemize}
+
+\section{Fähigkeiten}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Programmiersprachen:}\\ Erfahren in: C, C++, Java, HTML/CSS, Javascript/Typescript, C\#, SQL, PHP \\ Basisverständnis in: Assembler, VHDL, Haskell, Bash, Python, LaTeX, Lua
+
+\vspace{6pt}
+
+\item \textbf{Industiesoftware:} MS Office/LibreOffice, Matlab/Simulink, Jenkins CI, git, Redmine
+
+\vspace{6pt}
+
+\item \textbf{Sonstige:} Elektronik löten, Leiterplatten designen, Präsentationen erstellen (Powerpoint/LaTeX)
+
+\end{itemize}
+
+\section{Interessen und außeruniversitäre Aktivitäten}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{Seit ich sieben Jahre alt bin, betreibe ich Kempo-Karate, eine Mischung aus mehreren bekannten Kampfsportarten, u.a. Judo, Karate und Kendo. Seit vier Jahren trainiere ich als Haupttrainer mit offizieller C-Trainer Lizenz die Kinder- und Jugendgruppe in unserem Verein, davor war ich Assistenztrainer.}
+
+\vspace{6pt}
+
+\item{Ich spiele seit meinem zehnten Lebensjahr Trompete. Im Gymnasium spielte ich bis zu meinem Schulabschluss im Orchester, in den letzten vier Jahren davon als erste Trompete. Während meines Studiums Teilnahme an der Bigband Weihenstephan.}
+
+\vspace{6pt}
+
+\item{Seit drei Jahren trainiere ich klassische Akrobatik. Seit Oktober 2016 trainiere ich zusammen mit einem Lehrer die Akrobatikgruppe meiner alten Schule.}
+
+\end{itemize}
+
+\section{Publikationen}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{Seminararbeit: "Simulation von Genetischen Algorithmen - Zufall am Beispiel von Fechtern", 2015, Aufrufbar auf: http://janco-it.de/Seminararbeit.pdf, Gewinn des zweiten Platzes der Dr Hans Riegel-Stiftung 2015 (dotiert mit 400\euro)}
+
+\end{itemize}
+
+% Publications from a BibTeX file using the multibib package
+
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{seminar}
+%%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+%% end of file `template.tex'.
+
