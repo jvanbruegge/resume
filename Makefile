@@ -1,6 +1,6 @@
 .PHONY: all clean
 
-all: german
+all: german english
 
 german:
 	pdflatex Lebenslauf-german.tex

@@ -1,0 +1,235 @@
+
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage{eurosym}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Jan}{van Brügge}
+%\title{Lebenslauf}                               % optional, remove / comment the line if not wanted
+\address{Am Sportplatz 3, 85375 Neufahrn}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+49 176 45884975}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{jan@vanbruegge.de}                               % optional, remove / comment the line if not wanted
+%\homepage{www.myname.webs.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{born 12.02.1997}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%--------------------------------------------------------------
+%            content
+%--------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+%\small{Undergraduate electrical and electronic engineer completing the final year of a master's degree. Passionate about science, with strong technical, business, and interpersonal skills for working in a team and successfully completing a project.}
+
+\section{Internships}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{August -- September 2016}{Hospitant}{Bayrischer Rundfunk}{Munich}{}{\vspace{3pt}For six weeks I was at BR Data, the datajournalistic department of the Bayrischer Rundfunk. In this time I wrote a tool for conducting surveys for which I made all major design decisions such as the software stack on my own (\textit{see "Project"}).}}
+
+\vspace{6pt}
+
+\item{\cventry{June 2014}{Intern}{Klonk Games}{Munich}{}{\vspace{3pt}I created the AI for serveral new enemies and a new user interface for the game \textit{"TDS"}. After that I created a few levels for the game \textit{"Shift Happens"}, from which some made it into the final game.}}
+
+\end{itemize}
+
+\section{Freelance work}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+    \item{\cventry{Founded June 2015}{Software development, mainly webdesign}{JanCo IT Solutions}{Neufahrn}{}{\vspace{3pt}I develop websites and web applications for companies, organizations and private persons. See a subset of projects unter \textit{"Projects"}.}}
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2015 -- prob. 2019}{Computer Science, application course Engineering}{Technische Universität München}{Garching}{Bachelor of Science}{}}
+
+\item{\cventry{2007 -- 2015}{Graduation: allgemeine Hochschulreife}{Oskar-Maria-Graf Gymnasium}{Neufahrn}{}{}}  % arguments 3 to 6 can be left empty
+
+\end{itemize}
+
+\vspace{2pt}
+
+\section{Projects}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{MOVE-II} \textit{WARR}
+
+\small{C++, ATxmega, CMake, Gitlab CI}
+
+\vspace{3pt}
+
+\begin{small}
+\begin{itemize}
+\item{MOVE-II (Munich Orbital Verification Experiment): CubeSat developed by students, launch early 2018}
+\item{ADCS (Attitude Determination and Control System): active attitude control through coils}
+\item{Own role: technical lead of the ADCS software, software engineering, managing, testing}
+\end{itemize}
+\end{small}
+}
+
+\vspace{6pt}
+
+\item{\textbf{Survey tool} \textit{BR Data}
+
+\small{Cycle.js, Node.js/Express, Typescript, MongoDB}
+
+\begin{small}
+\begin{itemize}
+\item{Intended to conduct user surveys about recent articles and gather data for new articles}
+\item{Own role: sole developer, all design decisions were made by me except styling}
+\end{itemize}
+\end{small}
+}
+
+\vspace{6pt}
+
+\item{\textbf{pdGraph} \textit{Hörmann Automotive Penzberg GmbH}
+
+\small{Play! Framework (Java), Cycle.js, D3.js, Typescript, Microsoft SQL Server}
+
+\begin{small}
+\begin{itemize}
+\item{Used to log and plot data of serveral industrial plants over time}
+\item{Own role: sole developer, all design decisions were made by me}
+\end{itemize}
+\end{small}
+
+}
+
+\end{itemize}
+
+\section{Skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Programming languages:}\\ Proficient in: C, C++, Java, HTML/CSS, Javascript/Typescript, C\#, SQL, Haskell \\ Basic understaning of: Assembly, VHDL, Bash, Python, LaTeX, Lua, OCaml
+
+\vspace{6pt}
+
+\item \textbf{Industry software:} Matlab/Simulink, Jenkins CI, git, Redmine
+
+\vspace{6pt}
+
+\item \textbf{Miscellaneous:} Soldering electronic components, design circuit boards
+
+\end{itemize}
+
+\section{Public speaking}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\textbf{Cycleconf 2017:} Property based testing in Cycle.js
+
+    \small{Video available under \hyperlink{https://vimeo.com/217133774}{https://vimeo.com/217133774}}}
+
+\vspace{6pt}
+
+\item{\textbf{Hans-Riegel-Akademie 2017:} Where did my time go - how Netflix suggests good movies
+
+    \small{Video available soon (german)}}
+
+\item{\textbf{MunichJS:} Introduction to functional reactive programming with Cycle.js
+
+    \small{Video available soon}}
+
+\end{itemize}
+
+\section{Intests and miscellaneous activities}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{Since I am seven years old, I am doing Kemo-Karate, a mix of several different martial arts styles, e.g. Judo, Karate and Kendo. For five years now I am working in an honorary capacity as trainer of the kids and teenage group at my local sports club. I have an official C-Trainer licence.}
+
+\vspace{6pt}
+
+\item{I am playing the trumpet since my tenth year of live. In Highschool I played in the orchestra, the last four years I even played first trumpet. During my first semster I played in the Bigband Weihenstephan.}
+
+\vspace{6pt}
+
+\item{For four years I am doing classic acrobatics. Since october 2016 I am working in an honorary capacity as trainer in my old highschool.}
+
+\end{itemize}
+
+\section{Publications}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{Seminar work: "Simulation von Genetischen Algorithmen - Zufall am Beispiel von Fechtern", 2015, accessible at: http://janco-it.de/Seminararbeit.pdf, Winner of the second prize of the Dr Hans Riegel-Stiftung 2015 (endowed with 400\euro)}
+
+\end{itemize}
+
+% Publications from a BibTeX file using the multibib package
+
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{seminar}
+%%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+%% end of file `template.tex'.
+
